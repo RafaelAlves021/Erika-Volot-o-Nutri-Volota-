@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Open Graph -->
+    <title>Erika Volotão | Nutricionista & Terapeuta de Emagrecimento</title>
+    <meta name="description" content="Emagrecimento sem autossabotagem, sem dietas restritivas e sem culpa. Nutrição esportiva, vegana e reeducação alimentar com a Nutri Volota. Atendimento online e presencial no RJ.">
+    <meta property="og:title" content="Erika Volotão | Nutri Volota">
+    <meta property="og:description" content="Transforme sua relação com a comida — e com você. Mente + Comportamento + Nutrição.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.instagram.com/aerikavolotao/">
+    
+    <!-- Schema.org (LocalBusiness / Nutritionist) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Nutritionist",
+      "name": "Erika Volotão - Nutri Volota",
+      "image": "https://www.instagram.com/aerikavolotao/",
+      "telephone": "+55-21-97007-4010",
+      "url": "https://www.instagram.com/aerikavolotao/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Miranda e Brito, 16 - Irajá",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "21235-130",
+        "addressCountry": "BR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "19"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-content">
+            <h1 class="logo-text">VOLOTA</h1>
+            <div class="spinner-glow"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor d-none d-lg-block" aria-hidden="true"></div>
+    <div class="custom-cursor-follower d-none d-lg-block" aria-hidden="true"></div>
+
+    <!-- HEADER Fixo -->
+    <header class="fixed-top glass-header">
+        <nav class="navbar navbar-expand-lg container py-3">
+            <a class="navbar-brand logo-brand" href="#">VOLOTA <span class="badge-crn"><!-- INSERIR CRN --></span></a>
+            
+            <button class="navbar-toggler menu-btn border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-4 mb-3 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#metodo">Método</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resultados">Resultados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                        <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20Diagnóstico%20Gratuito" target="_blank" class="btn btn-cta-yellow px-4 py-2">
+                            <i class="bi bi-whatsapp me-2"></i>Diagnóstico Gratuito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2) HERO -->
+        <section class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+            <div class="canvas-container position-absolute w-100 h-100 top-0 start-0" aria-hidden="true">
+                <canvas id="hero-canvas"></canvas>
+            </div>
+            <div class="mesh-gradient-bg" aria-hidden="true"></div>
+            
+            <div class="container position-relative z-2 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-badge mb-4 animate-fade-in">
+                            <span class="text-warning">★ 4,8</span>
+                            <span class="text-light opacity-75">no Google · Atendimento online e presencial</span>
+                        </div>
+                        
+                        <h1 class="display-4 fw-bold text-white mb-4 hero-title">
+                            Emagreça sem viver recomeçando. <span class="text-highlight typewrite" data-period="2000" data-rotate='[ "Sem dieta restritiva.", "Sem sofrimento.", "Sem autossabotagem." ]'></span>
+                        </h1>
+                        
+                        <p class="lead text-light opacity-85 mb-5 fs-5">
+                            Mente + comportamento + nutrição para você entender o que precisa mudar para sustentar suas escolhas de forma leve e definitiva.
+                        </p>
+                        
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20Diagnóstico%20Gratuito" target="_blank" class="btn btn-cta-yellow btn-lg px-5 py-3 glow-pulse fw-bold">
+                                <i class="bi bi-whatsapp me-2"></i>Agende seu Diagnóstico Gratuito
+                            </a>
+                            <a href="#metodo" class="btn btn-outline-light btn-lg px-4 py-3 glass-btn">
+                                Conheça o método <i class="bi bi-arrow-down ms-2"></i>
+                            </a>
+                        </div>
+                        <p class="text-muted small mt-3">⚡ Sem compromisso · Atendimento humanizado</p>
+                    </div>
+                    
+                    <div class="col-lg-5 text-center">
+                        <div class="hero-image-wrapper position-relative mx-auto">
+                            <div class="scanner-bracket top-left"></div>
+                            <div class="scanner-bracket top-right"></div>
+                            <div class="scanner-bracket bottom-left"></div>
+                            <div class="scanner-bracket bottom-right"></div>
+                            
+                            <div class="rotating-ring"></div>
+                            <div class="hero-img-container rounded-organic overflow-hidden shadow-2xl position-relative">
+                                <!-- SUBSTITUTE PELA FOTO DA ERIKA -->
+                                <div class="photo-placeholder d-flex flex-column align-items-center justify-content-center p-5 text-center">
+                                    <i class="bi bi-person-heart display-1 text-purple-light mb-3"></i>
+                                    <span class="text-white fw-semibold">Erika Volotão</span>
+                                    <span class="small text-muted">Nutricionista & Terapeuta</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Glass Cards -->
+                            <div class="floating-card card-1 glass-card p-3 shadow-lg">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon-box bg-purple text-warning rounded-circle p-2"><i class="bi bi-check-lg fs-5"></i></div>
+                                    <div class="text-start">
+                                        <h6 class="mb-0 text-white fw-bold">+6 Etapas</h6>
+                                        <small class="text-muted">Transformação real</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card card-2 glass-card p-3 shadow-lg">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="icon-box bg-purple text-success rounded-circle p-2"><i class="bi bi-shield-check fs-5"></i></div>
+                                    <div class="text-start">
+                                        <h6 class="mb-0 text-white fw-bold">100% Sem Dieta</h6>
+                                        <small class="text-muted">Restritiva ou culpa</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3) FAIXA DE CONFIANÇA (Marquee) -->
+        <div class="confidence-marquee py-3 overflow-hidden border-y border-purple-subtle">
+            <div class="marquee-track">
+                <span class="marquee-item">🥗 Nutrição Vegana e Plant-based</span>
+                <span class="marquee-item">•</span>
+                <span class="marquee-item">🏋️‍♀️ Nutrição Esportiva</span>
+                <span class="marquee-item">•</span>
+                <span class="marquee-item">🧠 Terapia de Emagrecimento</span>
+                <span class="marquee-item">•</span>
+                <span class="marquee-item">💚 Reeducação Alimentar</span>
+                <span class="marquee-item">•</span>
+                <span class="marquee-item">🌐 Atendimento Online (Todo o Brasil)</span>
+                <span class="marquee-item">•</span>
+                <span class="marquee-item">📍 Presencial no Irajá (RJ)</span>
+                <span class="marquee-item">•</span>
+            </div>
+        </div>
+
+        <!-- 4) O PROBLEMA / IDENTIFICAÇÃO -->
+        <section class="py-5 section-dark position-relative">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Quebrando o ciclo</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">Você não precisa de outra dieta.</h2>
+                    <p class="text-light opacity-75 lead mt-3">Você já tentou de tudo. O problema nunca foi a sua falta de força de vontade.</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 hover-tilt">
+                            <div class="text-warning fs-1 mb-3"><i class="bi bi-arrow-repeat"></i></div>
+                            <h4 class="text-white h5 fw-bold">Efeito Sanfona Contínuo</h4>
+                            <p class="text-muted mb-0">Perde peso rápido sofrendo, recupera tudo (e mais um pouco) logo depois por exaustão mental.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 hover-tilt">
+                            <div class="text-warning fs-1 mb-3"><i class="bi bi-heartbreak"></i></div>
+                            <h4 class="text-white h5 fw-bold">Culpa Após Comer</h4>
+                            <p class="text-muted mb-0">Relação tóxica com a comida onde comer um doce se torna motivo de punição e frustração profunda.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 hover-tilt">
+                            <div class="text-warning fs-1 mb-3"><i class="bi bi-hourglass-split"></i></div>
+                            <h4 class="text-white h5 fw-bold">Falta de Constância</h4>
+                            <p class="text-muted mb-0">Planos alimentares engessados que não cabem na sua rotina real, trabalho e vida social.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-5 p-4 rounded-4 glass-banner text-center border-glow max-w-900 mx-auto">
+                    <h3 class="text-white h4 fw-bold mb-2">A Virada de Chave 💡</h3>
+                    <p class="text-light fs-5 mb-0">"O problema nunca foi força de vontade. É entender o que sustenta (ou sabota) suas escolhas diárias."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5) O MÉTODO — 6 Etapas de Transformación -->
+        <section id="metodo" class="py-5 section-darker position-relative">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Mente + Comportamento + Nutrição</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">6 Etapas de Transformação</h2>
+                    <p class="text-light opacity-75 lead mt-3">Um caminho estruturado para você alcançar resultados reais e definitivos.</p>
+                </div>
+                
+                <div class="timeline-container position-relative">
+                    <div class="timeline-line d-none d-lg-block"></div>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">01</div>
+                                <h4 class="text-white h5 fw-bold">Diagnóstico Profundo</h4>
+                                <p class="text-muted small mb-0">Mapeamento completo da sua rotina, histórico de saúde, exames e pontos críticos.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">02</div>
+                                <h4 class="text-white h5 fw-bold">Comportamento & Mente</h4>
+                                <p class="text-muted small mb-0">Identificação de gatilhos emocionais e padrões de autossabotagem na alimentação.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">03</div>
+                                <h4 class="text-white h5 fw-bold">Plano Personalizado</h4>
+                                <p class="text-muted small mb-0">Estratégia alimentar flexível, adaptada ao seu paladar, gostos e estilo de vida.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">04</div>
+                                <h4 class="text-white h5 fw-bold">Reconexão com a Comida</h4>
+                                <p class="text-muted small mb-0">Resgate do prazer em se alimentar sem culpa, fome emocional ou restrições severas.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">05</div>
+                                <h4 class="text-white h5 fw-bold">Ajustes & Acompanhamento</h4>
+                                <p class="text-muted small mb-0">Suporte contínuo para superar obstáculos e refinar o processo conforme sua evolução.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="glass-card p-4 h-100 step-card">
+                                <div class="step-number text-warning fw-bold display-6 mb-2">06</div>
+                                <h4 class="text-white h5 fw-bold">Manutenção Sustentável</h4>
+                                <p class="text-muted small mb-0">Autonomia conquistada para manter o peso e a saúde para o resto da vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6) ÁREAS DE ATUAÇÃO -->
+        <section id="areas" class="py-5 section-dark">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Especialidades</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">Áreas de Atuação</h2>
+                    <p class="text-light opacity-75 lead mt-3">Abordagens científicas focadas na sua individualidade biológica e comportamental.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between hover-tilt">
+                            <div>
+                                <div class="icon-box bg-purple-light text-warning fs-3 rounded-3 p-3 mb-4 d-inline-block"><i class="bi bi-flower1"></i></div>
+                                <h3 class="text-white h5 fw-bold">Nutrição Vegana & Plant-based</h3>
+                                <p class="text-muted small">Alimentação vegetal equilibrada, garantindo todos os nutrientes, proteínas e energia sem complicação.</p>
+                            </div>
+                            <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Quero%20saber%20mais%20sobre%20Nutrição%20Vegana%20e%20Plant-based" target="_blank" class="btn btn-sm btn-outline-light mt-4">Quero saber mais <i class="bi bi-whatsapp ms-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between hover-tilt">
+                            <div>
+                                <div class="icon-box bg-purple-light text-warning fs-3 rounded-3 p-3 mb-4 d-inline-block"><i class="bi bi-lightning-charge"></i></div>
+                                <h3 class="text-white h5 fw-bold">Nutrição Esportiva</h3>
+                                <p class="text-muted small">Desempenho físico otimizado, ganho de massa magra, recuperação e energia para treinos e rotina.</p>
+                            </div>
+                            <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Quero%20saber%20mais%20sobre%20Nutrição%20Esportiva%20e%20Desempenho" target="_blank" class="btn btn-sm btn-outline-light mt-4">Quero saber mais <i class="bi bi-whatsapp ms-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between hover-tilt">
+                            <div>
+                                <div class="icon-box bg-purple-light text-warning fs-3 rounded-3 p-3 mb-4 d-inline-block"><i class="bi bi-shield-heart"></i></div>
+                                <h3 class="text-white h5 fw-bold">Terapia de Emagrecimento</h3>
+                                <p class="text-muted small">Foco na mente e no comportamento para eliminar a autossabotagem e a ansiedade alimentar.</p>
+                            </div>
+                            <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Quero%20saber%20mais%20sobre%20Terapia%20de%20Emagrecimento" target="_blank" class="btn btn-sm btn-outline-light mt-4">Quero saber mais <i class="bi bi-whatsapp ms-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between hover-tilt">
+                            <div>
+                                <div class="icon-box bg-purple-light text-warning fs-3 rounded-3 p-3 mb-4 d-inline-block"><i class="bi bi-emoji-smile"></i></div>
+                                <h3 class="text-white h5 fw-bold">Reconexão com o Corpo</h3>
+                                <p class="text-muted small">Faça as pazes com o espelho e com a comida, construindo uma autoestima inabalável.</p>
+                            </div>
+                            <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Quero%20saber%20mais%20sobre%20Reconexão%20com%20o%20Corpo" target="_blank" class="btn btn-sm btn-outline-light mt-4">Quero saber mais <i class="bi bi-whatsapp ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7) NÚMEROS (Contadores Animados) -->
+        <section class="py-5 section-darker border-y border-purple-subtle">
+            <div class="container py-4">
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 col-6">
+                        <div class="p-3">
+                            <h3 class="display-4 fw-bold text-warning mb-1"><span class="counter" data-target="4.8">0</span>★</h3>
+                            <p class="text-light opacity-75 mb-0 fw-semibold">Avaliação no Google</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="p-3">
+                            <h3 class="display-4 fw-bold text-white mb-1"><span class="counter" data-target="19">0</span></h3>
+                            <p class="text-light opacity-75 mb-0 fw-semibold">Avaliações Verificadas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="p-3">
+                            <h3 class="display-4 fw-bold text-warning mb-1"><span class="counter" data-target="100">0</span>%</h3>
+                            <p class="text-light opacity-75 mb-0 fw-semibold">Personalizado para Você</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="p-3">
+                            <h3 class="display-4 fw-bold text-white mb-1">Brasil</h3>
+                            <p class="text-light opacity-75 mb-0 fw-semibold">Atendimento Online & Presencial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8) SOBRE A ERIKA -->
+        <section id="sobre" class="py-5 section-dark">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 text-center">
+                        <div class="hero-image-wrapper position-relative mx-auto">
+                            <div class="scanner-bracket top-left"></div>
+                            <div class="scanner-bracket bottom-right"></div>
+                            <div class="hero-img-container rounded-organic overflow-hidden shadow-2xl position-relative">
+                                <!-- SUBSTITUTE PELA FOTO DA ERIKA -->
+                                <div class="photo-placeholder d-flex flex-column align-items-center justify-content-center p-5 text-center">
+                                    <i class="bi bi-camera display-1 text-purple-light mb-3"></i>
+                                    <span class="text-white fw-semibold">Consultório / Erika</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7">
+                        <span class="text-uppercase text-warning fw-bold tracking-wider small">Conheça a Profissional</span>
+                        <h2 class="display-5 fw-bold text-white mt-2 mb-4">Olá, sou a Erika Volotão</h2>
+                        
+                        <p class="text-light opacity-85 lead mb-4">
+                            Acredito que cuidar da alimentação não deve ser sinônimo de sofrimento ou rigidez extrema. Minha missão é unir ciência, empatia e leveza para transformar a sua relação com a comida e com o seu próprio corpo.
+                        </p>
+                        
+                        <blockquote class="blockquote-custom p-4 rounded-4 mb-4 glass-card border-start border-4 border-warning">
+                            <p class="text-white fst-italic mb-0">"Sem culpa, sem sofrimento e com muito propósito. Você merece viver leve."</p>
+                            <footer class="text-warning small mt-2">— Erika Volotão</footer>
+                        </blockquote>
+                        
+                        <div class="d-flex flex-wrap gap-3 mb-4">
+                            <span class="badge bg-purple text-light p-2 px-3 border border-purple-subtle"><i class="bi bi-patch-check-fill text-warning me-2"></i>Nutricionista</span>
+                            <span class="badge bg-purple text-light p-2 px-3 border border-purple-subtle"><i class="bi bi-patch-check-fill text-warning me-2"></i>Terapeuta de Emagrecimento</span>
+                            <span class="badge bg-purple text-light p-2 px-3 border border-purple-subtle"><i class="bi bi-patch-check-fill text-warning me-2"></i>Nutrição Esportiva</span>
+                        </div>
+                        
+                        <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20conversar%20com%20você" target="_blank" class="btn btn-cta-yellow px-4 py-3 fw-bold">
+                            <i class="bi bi-whatsapp me-2"></i>Fale diretamente com a Erika
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9) COMO FUNCIONA A CONSULTA -->
+        <section class="py-5 section-darker">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Simples e humanizado</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">Como Funciona a Consulta</h2>
+                    <p class="text-light opacity-75 lead mt-3">Três passos fáceis para iniciar a sua transformação hoje mesmo.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 text-center">
+                            <div class="circle-step mx-auto bg-purple text-warning fw-bold fs-4 rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">1</div>
+                            <h4 class="text-white h5 fw-bold">Diagnóstico Gratuito</h4>
+                            <p class="text-muted small mb-0">Clique em qualquer botão de agendamento e fale direto pelo WhatsApp sem compromisso.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 text-center">
+                            <div class="circle-step mx-auto bg-purple text-warning fw-bold fs-4 rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">2</div>
+                            <h4 class="text-white h5 fw-bold">Conversa Inicial</h4>
+                            <p class="text-muted small mb-0">Entendemos sua história, sua rotina, seus objetivos e quais os maiores desafios que você enfrenta.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 text-center">
+                            <div class="circle-step mx-auto bg-purple text-warning fw-bold fs-4 rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">3</div>
+                            <h4 class="text-white h5 fw-bold">Plano Sob Medida</h4>
+                            <p class="text-muted small mb-0">Receba sua estratégia personalizada (online ou presencial no Irajá - RJ) e comece a ver resultados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10) DEPOIMENTOS / PROVA SOCIAL -->
+        <section id="resultados" class="py-5 section-dark">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Depoimentos Reais</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">O que dizem os pacientes</h2>
+                    <p class="text-light opacity-75 lead mt-3">Avaliações verificadas diretamente do nosso perfil no Google.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-warning mb-3">★★★★★</div>
+                                <p class="text-light fst-italic mb-4">"Gostei da maneira como ela desenvolve a consulta."</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-top border-purple-subtle pt-3">
+                                <span class="text-white fw-semibold small">Paciente Google</span>
+                                <span class="badge bg-success-subtle text-success small">Verificado ★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-warning mb-3">★★★★★</div>
+                                <p class="text-light fst-italic mb-4">"Kkkkkk muito bom, vamos com tudo, time Volotaaa"</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-top border-purple-subtle pt-3">
+                                <span class="text-white fw-semibold small">Paciente Google</span>
+                                <span class="badge bg-success-subtle text-success small">Verificado ★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-warning mb-3">★★★★★</div>
+                                <p class="text-light fst-italic mb-4">"Gostei mto da nossa conversa."</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between border-top border-purple-subtle pt-3">
+                                <span class="text-white fw-semibold small">Paciente Google</span>
+                                <span class="badge bg-success-subtle text-success small">Verificado ★★★★★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="https://www.google.com/search?q=Erika+Volotão+Nutricionista" target="_blank" class="btn btn-outline-light px-4 py-2">
+                        <i class="bi bi-google me-2"></i>Ver todas as avaliações no Google (4,8★)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11) QUIZ INTERATIVO -->
+        <section id="quiz" class="py-5 section-darker">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Ferramenta Interativa</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">Descubra seu Perfil Alimentar</h2>
+                    <p class="text-light opacity-75 lead mt-3">Responda a 3 perguntas rápidas e entenda qual a melhor estratégia para o seu momento.</p>
+                </div>
+                
+                <div class="glass-card p-4 p-md-5 max-w-800 mx-auto rounded-4 position-relative">
+                    <div id="quiz-container">
+                        <!-- Step 1 -->
+                        <div class="quiz-step active" data-step="1">
+                            <span class="badge bg-purple text-warning mb-3">Pergunta 1 de 3</span>
+                            <h4 class="text-white fw-bold mb-4">Como você costuma se sentir quando tenta começar uma nova dieta?</h4>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Emocional">Ansiosa(o), pensando em tudo o que vou ter que cortar e proibir.</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Sanfona">Entusiasmada(o) no início, mas depois me sinto exausta(o) e desisto.</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Atleta">Focada(o) em performance, buscando o melhor rendimento nos treinos.</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="quiz-step d-none" data-step="2">
+                            <span class="badge bg-purple text-warning mb-3">Pergunta 2 de 3</span>
+                            <h4 class="text-white fw-bold mb-4">Qual é o seu maior desafio atual com a alimentação?</h4>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Emocional">Comer por ansiedade, estresse ou tédio (fome emocional).</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Sanfona">Manter a constância e o efeito sanfona constante.</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Plant-based">Adaptar receitas nutritivas, veganas ou plant-based saborosas na rotina.</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="quiz-step d-none" data-step="3">
+                            <span class="badge bg-purple text-warning mb-3">Pergunta 3 de 3</span>
+                            <h4 class="text-white fw-bold mb-4">O que você mais deseja para a sua saúde este ano?</h4>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Emocional">Fazer as pazes com a comida, sem culpa e sem sofrimento.</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Sanfona">Conquistar um emagrecimento sustentável e definitivo.</button>
+                                <button class="btn btn-quiz-option text-start p-3 text-white" data-profile="Atleta">Melhorar a composição corporal e energia física.</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Result -->
+                        <div class="quiz-result d-none text-center py-4">
+                            <div class="text-warning display-3 mb-3"><i class="bi bi-check-circle-fill"></i></a></div>
+                            <h3 class="text-white fw-bold mb-3">Seu perfil identificado: <span id="profile-name" class="text-warning"></span></h3>
+                            <p class="text-light opacity-85 mb-4">Identificamos exatamente o que você precisa para destravar seus resultados com leveza e sem dietas restritivas.</p>
+                            <a id="whatsapp-quiz-btn" href="#" target="_blank" class="btn btn-cta-yellow btn-lg px-5 py-3 fw-bold">
+                                <i class="bi bi-whatsapp me-2"></i>Receber Diagnóstico Gratuito no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12) FAQ -->
+        <section id="faq" class="py-5 section-dark">
+            <div class="container py-5">
+                <div class="text-center max-w-800 mx-auto mb-5">
+                    <span class="text-uppercase text-warning fw-bold tracking-wider small">Dúvidas Frequentes</span>
+                    <h2 class="display-5 fw-bold text-white mt-2">Perguntas Frequentes</h2>
+                    <p class="text-light opacity-75 lead mt-3">Esclareça suas principais dúvidas antes de iniciar seu acompanhamento.</p>
+                </div>
+                
+                <div class="accordion max-w-800 mx-auto custom-accordion" id="faqAccordion">
+                    <div class="accordion-item glass-card border-0 mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-transparent text-white fw-semibold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Preciso seguir dieta restritiva?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                De forma alguma! A proposta da Nutri Volota é justamente o oposto: emagrecimento sem autossabotagem e sem restrições severas. Criamos estratégias flexíveis que cabem na sua rotina e no seu paladar.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card border-0 mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-transparent text-white fw-semibold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Como funciona o atendimento online?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                O atendimento online é completo e humanizado, realizado por vídeo chamada com suporte direto via WhatsApp. Atendemos pacientes de todo o Brasil com a mesma proximidade e eficácia do presencial.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card border-0 mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed bg-transparent text-white fw-semibold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Atende vegetarianos e veganos (plant-based)?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Sim! Contamos com especialização em nutrição vegana e plant-based, garantindo que sua alimentação seja rica em nutrientes, proteínas de qualidade e muito saborosa.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card border-0 mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed bg-transparent text-white fw-semibold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Serve para quem treina e busca performance?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Com certeza! A nutrição esportiva é um dos nossos pilares, voltada para ganho de massa magra, otimização de performance, recuperação e energia para os treinos.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item glass-card border-0 mb-3 rounded-3 overflow-hidden">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed bg-transparent text-white fw-semibold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Como funciona o diagnóstico gratuito?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                É uma conversa inicial rápida pelo WhatsApp para entendermos seus objetivos e qual o melhor caminho para o seu caso, sem compromisso financeiro.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13) CTA FINAL GIGANTE -->
+        <section class="py-5 section-darker position-relative overflow-hidden">
+            <div class="mesh-gradient-bg-alt" aria-hidden="true"></div>
+            <div class="container py-5 position-relative z-2 text-center">
+                <div class="max-w-900 mx-auto glass-card p-5 rounded-5 border-glow">
+                    <h2 class="display-4 fw-bold text-white mb-4">Transforme sua relação com a comida — e com você.</h2>
+                    <p class="lead text-light opacity-85 mb-5">Dê o primeiro passo rumo a uma vida leve, sem culpa e com resultados sustentáveis.</p>
+                    
+                    <div class="d-flex justify-content-center mb-5">
+                        <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20Diagnóstico%20Gratuito" target="_blank" class="btn btn-cta-yellow btn-lg px-5 py-3 glow-pulse fw-bold fs-5">
+                            <i class="bi bi-whatsapp me-2"></i>Agendar meu Diagnóstico Gratuito
+                        </a>
+                    </div>
+                    
+                    <div class="row g-4 text-start border-top border-purple-subtle pt-4">
+                        <div class="col-md-4">
+                            <h6 class="text-warning fw-bold mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Endereço Presencial</h6>
+                            <p class="text-muted small mb-0">R. Miranda e Brito, 16 - Irajá, Rio de Janeiro - RJ, 21235-130</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-warning fw-bold mb-1"><i class="bi bi-whatsapp me-2"></i>Contato / WhatsApp</h6>
+                            <p class="text-muted small mb-0">(21) 97007-4010</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-warning fw-bold mb-1"><i class="bi bi-instagram me-2"></i>Instagram</h6>
+                            <p class="text-muted small mb-0"><a href="https://www.instagram.com/aerikavolotao/" target="_blank" class="text-muted text-decoration-none">@aerikavolotao</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 14) FOOTER -->
+    <footer class="py-4 section-dark border-top border-purple-subtle text-muted text-center">
+        <div class="container">
+            <h3 class="logo-brand fs-4 mb-2">VOLOTA</h3>
+            <p class="small mb-3">Atendimentos em todo o Brasil | Consultas online e presenciais no RJ</p>
+            <p class="small opacity-75 mb-0">&copy; 2026 Erika Volotão – Nutricionista. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Extras Fixos -->
+    <!-- Botão Flutuante de WhatsApp -->
+    <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20Diagnóstico%20Gratuito" target="_blank" class="whatsapp-float glow-pulse" aria-label="Fale com a Erika no WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale com a Erika</span>
+    </a>
+
+    <!-- Barra Fixa de CTA no Mobile -->
+    <div class="mobile-cta-bar d-lg-none fixed-bottom p-3 glass-header border-top border-purple-subtle">
+        <a href="https://wa.me/5521970074010?text=Olá%20Erika!%20Vim%20pelo%20site%20e%20quero%20agendar%20meu%20Diagnóstico%20Gratuito" target="_blank" class="btn btn-cta-yellow w-100 py-2 fw-bold shadow">
+            <i class="bi bi-whatsapp me-2"></i>Diagnóstico Gratuito
+        </a>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" class="btn btn-purple text-warning rounded-circle shadow" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
